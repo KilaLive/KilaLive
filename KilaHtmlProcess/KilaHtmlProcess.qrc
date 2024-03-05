@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/KilaHtmlProcess">
+        <file>resource/skin/title_win_bk.png</file>
+        <file>resource/skin/ubuntuSkin.qss</file>
+        <file>resource/skin/btn_close.png</file>
+        <file>resource/skin/btn_close_h.png</file>
+        <file>resource/skin/btn_close_win.png</file>
+        <file>resource/skin/btn_min_win.png</file>
+        <file>resource/skin/btn_show_front.png</file>
+        <file>resource/skin/webview_return.png</file>
+        <file>resource/skin/btn_show_back.png</file>
+        <file>resource/skin/logo.ico</file>
+        <file>resource/css/loginWidget.css</file>
+        <file>resource/skin/btn_show_front_checked.png</file>
+    </qresource>
+    <qresource prefix="/translator">
+        <file>resource/translator/kilamain_ja.qm</file>
+        <file>resource/translator/kilamain_zh.qm</file>
+    </qresource>
+</RCC>
