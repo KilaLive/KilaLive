@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleasePika|Win32">
+      <Configuration>ReleasePika</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleasePika|x64">
+      <Configuration>ReleasePika</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{E97EF8B8-78AE-45EA-A010-EE57940753BF}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>KilaLog</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleasePika|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleasePika|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleasePika|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleasePika|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleasePika|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleasePika|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>UXLOG_DLL_EXPORTS;HAVE_SNPRINTF;_WINSOCK_DEPRECATED_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;WIN32;_DEBUG;_WINDOWS;_DLL;_USRDLL;LOG4CPP_HAS_DLL;LOG4CPP_BUILD_DLL;_CONSOLE;;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>../3rds/include/;$(ProjectDir)log4cpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../3rds/lib/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>UXLOG_DLL_EXPORTS;HAVE_SNPRINTF;_WINSOCK_DEPRECATED_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;WIN32;NDEBUG;_WINDOWS;_DLL;_USRDLL;LOG4CPP_HAS_DLL;LOG4CPP_BUILD_DLL;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>../3rds/include/;$(ProjectDir)log4cpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/EHa /utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Ws2_32.lib;UxLog.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../3rds/lib/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleasePika|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>UXLOG_DLL_EXPORTS;HAVE_SNPRINTF;_WINSOCK_DEPRECATED_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;WIN32;NDEBUG;_WINDOWS;_DLL;_USRDLL;LOG4CPP_HAS_DLL;LOG4CPP_BUILD_DLL;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>../3rds/include/;$(ProjectDir)log4cpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Ws2_32.lib;UxLog.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../3rds/lib/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleasePika|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="KilaLog.cpp" />
+    <ClCompile Include="KilaLog.h" />
+    <ClCompile Include="log4cpp\src\AbortAppender.cpp" />
+    <ClCompile Include="log4cpp\src\Appender.cpp" />
+    <ClCompile Include="log4cpp\src\AppendersFactory.cpp" />
+    <ClCompile Include="log4cpp\src\AppenderSkeleton.cpp" />
+    <ClCompile Include="log4cpp\src\BasicConfigurator.cpp" />
+    <ClCompile Include="log4cpp\src\BasicLayout.cpp" />
+    <ClCompile Include="log4cpp\src\BufferingAppender.cpp" />
+    <ClCompile Include="log4cpp\src\Category.cpp" />
+    <ClCompile Include="log4cpp\src\CategoryStream.cpp" />
+    <ClCompile Include="log4cpp\src\Configurator.cpp" />
+    <ClCompile Include="log4cpp\src\DailyRollingFileAppender.cpp" />
+    <ClCompile Include="log4cpp\src\DllMain.cpp" />
+    <ClCompile Include="log4cpp\src\DummyThreads.cpp" />
+    <ClCompile Include="log4cpp\src\FactoryParams.cpp" />
+    <ClCompile Include="log4cpp\src\FileAppender.cpp" />
+    <ClCompile Include="log4cpp\src\Filter.cpp" />
+    <ClCompile Include="log4cpp\src\FixedContextCategory.cpp" />
+    <ClCompile Include="log4cpp\src\HierarchyMaintainer.cpp" />
+    <ClCompile Include="log4cpp\src\IdsaAppender.cpp" />
+    <ClCompile Include="log4cpp\src\LayoutAppender.cpp" />
+    <ClCompile Include="log4cpp\src\LayoutsFactory.cpp" />
+    <ClCompile Include="log4cpp\src\LevelEvaluator.cpp" />
+    <ClCompile Include="log4cpp\src\Localtime.cpp" />
+    <ClCompile Include="log4cpp\src\LoggingEvent.cpp" />
+    <ClCompile Include="log4cpp\src\Manipulator.cpp" />
+    <ClCompile Include="log4cpp\src\MSThreads.cpp" />
+    <ClCompile Include="log4cpp\src\NDC.cpp" />
+    <ClCompile Include="log4cpp\src\NTEventLogAppender.cpp" />
+    <ClCompile Include="log4cpp\src\OmniThreads.cpp" />
+    <ClCompile Include="log4cpp\src\OstreamAppender.cpp" />
+    <ClCompile Include="log4cpp\src\PassThroughLayout.cpp" />
+    <ClCompile Include="log4cpp\src\PatternLayout.cpp" />
+    <ClCompile Include="log4cpp\src\PortabilityImpl.cpp" />
+    <ClCompile Include="log4cpp\src\Priority.cpp" />
+    <ClCompile Include="log4cpp\src\Properties.cpp" />
+    <ClCompile Include="log4cpp\src\PropertyConfigurator.cpp" />
+    <ClCompile Include="log4cpp\src\PropertyConfiguratorImpl.cpp" />
+    <ClCompile Include="log4cpp\src\PThreads.cpp" />
+    <ClCompile Include="log4cpp\src\RemoteSyslogAppender.cpp" />
+    <ClCompile Include="log4cpp\src\RollingFileAppender.cpp" />
+    <ClCompile Include="log4cpp\src\SimpleConfigurator.cpp" />
+    <ClCompile Include="log4cpp\src\SimpleLayout.cpp" />
+    <ClCompile Include="log4cpp\src\SmtpAppender.cpp" />
+    <ClCompile Include="log4cpp\src\snprintf.c" />
+    <ClCompile Include="log4cpp\src\StringQueueAppender.cpp" />
+    <ClCompile Include="log4cpp\src\StringUtil.cpp" />
+    <ClCompile Include="log4cpp\src\SyslogAppender.cpp" />
+    <ClCompile Include="log4cpp\src\TimeStamp.cpp" />
+    <ClCompile Include="log4cpp\src\TriggeringEventEvaluatorFactory.cpp" />
+    <ClCompile Include="log4cpp\src\Win32DebugAppender.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="log4cpp\include\log4cpp\AbortAppender.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\Appender.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\AppendersFactory.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\AppenderSkeleton.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\BasicConfigurator.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\BasicLayout.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\BufferingAppender.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\Category.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\CategoryStream.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\config-MinGW32.h" />
+    <ClInclude Include="log4cpp\include\log4cpp\config-openvms.h" />
+    <ClInclude Include="log4cpp\include\log4cpp\config-win32-stlport-boost.h" />
+    <ClInclude Include="log4cpp\include\log4cpp\config-win32.h" />
+    <ClInclude Include="log4cpp\include\log4cpp\Configurator.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\convenience.h" />
+    <ClInclude Include="log4cpp\include\log4cpp\DailyRollingFileAppender.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\Export.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\FactoryParams.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\FileAppender.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\Filter.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\FixedContextCategory.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\HierarchyMaintainer.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\IdsaAppender.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\Layout.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\LayoutAppender.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\LayoutsFactory.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\LevelEvaluator.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\LoggingEvent.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\Manipulator.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\NDC.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\NTEventLogAppender.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\OstreamAppender.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\PassThroughLayout.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\PatternLayout.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\Portability.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\Priority.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\PropertyConfigurator.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\RemoteSyslogAppender.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\RollingFileAppender.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\SimpleConfigurator.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\SimpleLayout.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\SmtpAppender.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\StringQueueAppender.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\SyslogAppender.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\threading\BoostThreads.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\threading\DummyThreads.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\threading\MSThreads.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\threading\OmniThreads.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\threading\PThreads.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\threading\Threading.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\TimeStamp.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\TriggeringEventEvaluator.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\TriggeringEventEvaluatorFactory.hh" />
+    <ClInclude Include="log4cpp\include\log4cpp\Win32DebugAppender.hh" />
+    <ClInclude Include="log4cpp\src\Localtime.hh" />
+    <ClInclude Include="log4cpp\src\PortabilityImpl.hh" />
+    <ClInclude Include="log4cpp\src\Properties.hh" />
+    <ClInclude Include="log4cpp\src\PropertyConfiguratorImpl.hh" />
+    <ClInclude Include="log4cpp\src\StringUtil.hh" />
+    <ClInclude Include="UxLogConfig.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

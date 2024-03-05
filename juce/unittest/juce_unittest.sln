@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "juce_unittest", "juce_unittest.vcxproj", "{B77DFE78-E184-46C8-BAAA-F8525B3FAD60}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4B8C5E62-4FF6-37E1-85E0-EF21722A78EA} = {4B8C5E62-4FF6-37E1-85E0-EF21722A78EA}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "juce", "..\juce.vcxproj", "{4B8C5E62-4FF6-37E1-85E0-EF21722A78EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B77DFE78-E184-46C8-BAAA-F8525B3FAD60}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B77DFE78-E184-46C8-BAAA-F8525B3FAD60}.Debug|Win32.Build.0 = Debug|Win32
+		{B77DFE78-E184-46C8-BAAA-F8525B3FAD60}.Release|Win32.ActiveCfg = Release|Win32
+		{B77DFE78-E184-46C8-BAAA-F8525B3FAD60}.Release|Win32.Build.0 = Release|Win32
+		{4B8C5E62-4FF6-37E1-85E0-EF21722A78EA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4B8C5E62-4FF6-37E1-85E0-EF21722A78EA}.Debug|Win32.Build.0 = Debug|Win32
+		{4B8C5E62-4FF6-37E1-85E0-EF21722A78EA}.Release|Win32.ActiveCfg = Release|Win32
+		{4B8C5E62-4FF6-37E1-85E0-EF21722A78EA}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
